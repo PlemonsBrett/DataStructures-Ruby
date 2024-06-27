@@ -1,0 +1,18 @@
+class Node
+    attr_accessor data: untyped
+    attr_accessor prev: Node?
+    attr_accessor next: Node?
+
+    def initialize (untyped, Node? prev_node, Node? next_node) -> void
+end
+
+class DoublyLinkedList
+    attr_accessor head: Node?
+    attr_accessor tail: Node?
+
+    def initialize: () -> void
+    def append: (untyped data) -> void
+    def prepend: (untyped data) -> void
+    def delete: (untyped data) -> bool
+    def display: () -> void
+end
